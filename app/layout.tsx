@@ -19,7 +19,7 @@ export default function RootLayout({
       <body className="bg-white/20 flex-col items-center justify-center">
       <Nabvar/>
       <div className='w-screen flex justify-center'>
-      <div className='mt-[23%] sm:mt-[12%] lg:mt-[8%] w-[90vw] flex-col items-center justify-center'>
+      <div className='mt-[27%] sm:mt-[12%] lg:mt-[8%] w-[90vw] flex-col items-center justify-center'>
       <div className=' flex flex-col items-center border-[2px] bg-gray-100 min-h-[100vh] shadow-lg'>
       
         {children}
