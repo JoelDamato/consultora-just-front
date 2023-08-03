@@ -2,6 +2,7 @@
 import React from 'react'
 import axios from 'axios';
 import { useEffect,useState } from 'react';
+import Link from 'next/link';
 
 interface Producto {
   id: number;
@@ -44,6 +45,7 @@ export default function productos() {
               <p>{producto?.description}</p>
               <p>{producto?.category}</p>
               <img src={producto?.image} alt={producto?.name} />
+              <Link href={`/productos/${producto?.id}`}>Ver mas..</Link>
             </li>
           ))}
         </ul>
