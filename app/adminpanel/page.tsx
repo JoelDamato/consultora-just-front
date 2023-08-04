@@ -52,6 +52,7 @@ const AdminPanel = () => {
     axios.delete(`http://localhost:8000/api/products/delete/${id}`)
       .then(() => {
         // Si la eliminación fue exitosa, actualizamos la lista de productos
+        alert("producto eliminado")
         setProductos(prevProductos => prevProductos !== null ? prevProductos.filter(producto => producto.id !== id) : null);
       })
       .catch(err => console.log(err));

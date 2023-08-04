@@ -38,17 +38,24 @@ export default function productos() {
       {productos === null ? (
         <div>Cargando...</div>
       ) : (
-        <ul>
+        <div className='flex  sm:flex-wrap w-[100%] gap-3'>
+        
+
           {productos?.map((producto) => (
-            <li key={producto?.id}>
-              <h3>{producto?.name}</h3>
-              <p>{producto?.description}</p>
-              <p>{producto?.category}</p>
-              <img src={producto?.image} alt={producto?.name} />
+
+            <div className='border-[1px] border-black bg-white sm:w-[30%]  flex flex-col items-center'>
+            
+              <h1 className='p-2 text-3xl'>{producto?.name}</h1>
+              <p className='p-2 '>{producto?.description}</p>
+              <p className='p-2 '>{producto?.category}</p>
+              <img  className="w-[100%] h-[40%]" src={producto?.image} alt={producto?.name} />
               <Link href={`/productos/${producto?.id}`}>Ver mas..</Link>
-            </li>
+            
+            </div>
+
           ))}
-        </ul>
+       
+        </div>
       )}
     </div>
   )
