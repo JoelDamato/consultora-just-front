@@ -46,10 +46,10 @@ export default function productos() {
             <div className='border-[1px] border-black bg-white sm:w-[30%]  flex flex-col items-center'>
             
               <h1 className='p-2 text-3xl'>{producto?.name}</h1>
+              <img  className="w-[100%] h-[40%]" src={producto?.image} alt={producto?.name} />
               <p className='p-2 '>{producto?.description}</p>
               <p className='p-2 '>{producto?.category}</p>
-              <img  className="w-[100%] h-[40%]" src={producto?.image} alt={producto?.name} />
-              <Link href={`/productos/${producto?.id}`}>Ver mas..</Link>
+              <Link className='border-[1px] border-black rounded-lg p-1 hover:bg-black/20' href={`/productos/${producto?.id}`}>Ver mas..</Link>
             
             </div>
 
