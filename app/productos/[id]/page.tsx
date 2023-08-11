@@ -35,14 +35,18 @@ const Page: React.FC<PageProps> = ({ params }) => {
   }, [producto]);
 
   return (
-    <div>
-      <h1>Esto es un producto {params.id}</h1>
+
+    <div className='flex flex-col items-center'>
       {producto ? (
         <>
-          <h3>{producto.name}</h3>
-          <p>{producto.description}</p>
-          <p>{producto.category}</p>
-          <img src={producto.image} alt={producto.name} />
+        
+          <h3 className='text-3xl m-2'>{producto.name}</h3>
+          <p> Categoria: {producto.category}</p>
+          <img className='rounded-full m-2' src={producto.image} alt={producto.name} />
+          <p className='m-2'>{producto.description}</p>
+          
+          
+
         </>
       ) : (
         <p>Loading...</p>
