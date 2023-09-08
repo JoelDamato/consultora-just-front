@@ -42,14 +42,14 @@ export default function Home() {
 </svg>
 
     </div>
-    <Image src={imagesCarousel[counter]?.image} className=' h-[80vh] w-[100%] object-none shadow-lg' alt="Oleo31" />
+    <img src={imagesCarousel[counter]?.image} className=' h-[80vh] w-[100%] object-none shadow-lg' alt="Oleo31" />
     <h1 className='text-3xl font-semibold tracking-[10px] mt-5 mb-5 p-5'>
       
 
       ¡Bienvenido a Bienestar Elemental!</h1>
     
     <div className='sm:flex justify-evenly gap-5 mb-5'>
-<Image className='shadow-2xl h-[30vh] w-[80vw] sm:w-[20vw] object-cover rounded-full' src="https://i.pinimg.com/564x/ea/e2/72/eae272e89e0d99ad3011a8c0686e9ecf.jpg" alt="" />
+<img className='shadow-2xl h-[30vh] w-[80vw] sm:w-[20vw] object-cover rounded-full' src="https://i.pinimg.com/564x/ea/e2/72/eae272e89e0d99ad3011a8c0686e9ecf.jpg" alt="" />
 <p className='p-2 sm:w-[60vw] text-2xl flex justify-center'>
 
 Te ofrecemos una cuidadosa selección de productos naturales que te ayudarán a armonizar cuerpo y mente, y a llenar tu hogar con una energía positiva.
@@ -61,7 +61,7 @@ En cada vela y sahumerio, encontrarás la esencia misma de la naturaleza, porque
 
 <div className='sm:flex justify-evenly gap-5 mb-5'>
 
-<Image className=' sm:hidden flex h-[30vh] w-[80vw] shadow-2xl sm:w-[20vw] object-cover rounded-full' src="https://i.pinimg.com/564x/cb/8d/76/cb8d769a344191a9be4e2f39b274c0e0.jpg" alt="" />
+<img className=' sm:hidden flex h-[30vh] w-[80vw] shadow-2xl sm:w-[20vw] object-cover rounded-full' src="https://i.pinimg.com/564x/cb/8d/76/cb8d769a344191a9be4e2f39b274c0e0.jpg" alt="" />
 
 <p className='p-2 sm:w-[60vw] text-2xl flex justify-center'>
 
@@ -72,7 +72,7 @@ Nuestro objetivo es brindarte una experiencia única de relajación y bienestar.
 Explora nuestra variedad de velas, creadas para iluminar tu camino en los momentos más especiales. Déjate envolver por los aromas naturales que desprenden nuestros sahumerios, elevando tus sentidos a una conexión más profunda con la naturaleza.
 </p>
 
-<Image className='shadow-2xl hidden sm:flex h-[30vh] w-[80vw] sm:w-[20vw] object-cover rounded-full' src="https://i.pinimg.com/564x/cb/8d/76/cb8d769a344191a9be4e2f39b274c0e0.jpg" alt="" />
+<img className='shadow-2xl hidden sm:flex h-[30vh] w-[80vw] sm:w-[20vw] object-cover rounded-full' src="https://i.pinimg.com/564x/cb/8d/76/cb8d769a344191a9be4e2f39b274c0e0.jpg" alt="" />
 
 
 
