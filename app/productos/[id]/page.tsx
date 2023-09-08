@@ -35,6 +35,7 @@ const Page: React.FC<PageProps> = ({ params }) => {
   }, [producto]);
 
   return (
+
     <div className='flex flex-col items-center'>
       {producto ? (
         <>
@@ -45,6 +46,7 @@ const Page: React.FC<PageProps> = ({ params }) => {
           <p className='m-2'>{producto.description}</p>
           
           
+
         </>
       ) : (
         <p>Loading...</p>
