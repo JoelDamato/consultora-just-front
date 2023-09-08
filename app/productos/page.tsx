@@ -12,7 +12,7 @@ interface Producto {
   image: string;
 }
 
-export default function productos() {
+export default function Productos() {
 
   const [productos, setProductos] = useState<Producto[] | null>(null);
 
