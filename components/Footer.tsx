@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 export default function Footer() {
   return (
@@ -7,10 +8,10 @@ export default function Footer() {
       <div className='p-3 flex justify-center gap-3 shadow-lg bg-white/20 border-[1px] w-[100vw]'>
 
 <a target="_blank" href="https://www.instagram.com/brendacarolaalbornoz/">
-<img className='w-[8vw] h-[5vh] sm:w-[3vw] object-fill'  src="https://cdn.icon-icons.com/icons2/2972/PNG/512/instagram_logo_icon_186894.png" alt="" />
+<Image className='w-[8vw] h-[5vh] sm:w-[3vw] object-fill'  src="https://cdn.icon-icons.com/icons2/2972/PNG/512/instagram_logo_icon_186894.png" alt="" />
 </a>
 <a target="_blank" href="https://wa.me/+5491167501767">
-<img className='w-[8vw] h-[5vh] sm:w-[3vw] object-fill'  src="https://cdn.icon-icons.com/icons2/2972/PNG/512/whatsapp_logo_icon_186881.png" alt="" />
+<Image className='w-[8vw] h-[5vh] sm:w-[3vw] object-fill'  src="https://cdn.icon-icons.com/icons2/2972/PNG/512/whatsapp_logo_icon_186881.png" alt="" />
 </a>
 </div>
 

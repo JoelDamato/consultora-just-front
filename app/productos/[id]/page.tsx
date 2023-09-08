@@ -3,6 +3,7 @@ import React from 'react';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image'
 
 interface Producto {
   id: number;
@@ -42,7 +43,7 @@ const Page: React.FC<PageProps> = ({ params }) => {
         
           <h3 className='text-3xl m-2'>{producto.name}</h3>
           <p> Categoria: {producto.category}</p>
-          <img className='rounded-full m-2' src={producto.image} alt={producto.name} />
+          <Image className='rounded-full m-2' src={producto.image} alt={producto.name} />
           <p className='m-2'>{producto.description}</p>
           
           

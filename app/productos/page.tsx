@@ -3,6 +3,7 @@ import React from 'react'
 import axios from 'axios';
 import { useEffect,useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image'
 
 interface Producto {
   id: number;
@@ -12,7 +13,7 @@ interface Producto {
   image: string;
 }
 
-export default function productos() {
+export default function Productos() {
 
   const [productos, setProductos] = useState<Producto[] | null>(null);
 
@@ -46,7 +47,7 @@ export default function productos() {
             <div className='border-[1px] border-black bg-white sm:w-[30%]  flex flex-col items-center'>
             
               <h1 className='p-2 text-3xl'>{producto?.name}</h1>
-              <img  className="w-[100%] h-[40%]" src={producto?.image} alt={producto?.name} />
+              <Image  className="w-[100%] h-[40%]" src={producto?.image} alt={producto?.name} />
               <p className='p-2 '>{producto?.description}</p>
               <p className='p-2 '>{producto?.category}</p>
               <Link className='border-[1px] border-black rounded-lg p-1 hover:bg-black/20' href={`/productos/${producto?.id}`}>Ver mas..</Link>
