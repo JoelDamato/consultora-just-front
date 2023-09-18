@@ -8,6 +8,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 
+
 export default function Nabvar() {
   
   const [menu, setMenu] = useState<boolean>(false);
