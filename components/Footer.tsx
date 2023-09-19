@@ -4,6 +4,7 @@ import Image from 'next/image'
 
 
 
+
 export default function Footer() {
   return (
     <div className='mt-5 w-[100vw] min-h-[30vh] '>
