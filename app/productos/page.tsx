@@ -42,9 +42,9 @@ export default function Productos() {
         <div className='flex  sm:flex-wrap w-[100%] gap-3'>
         
 
-          {productos?.map((producto) => (
+          {productos?.map((producto,index) => (
 
-            <div className='border-[1px] border-black bg-white sm:w-[30%]  flex flex-col items-center'>
+            <div key={index} className='border-[1px] border-black bg-white sm:w-[30%]  flex flex-col items-center'>
             
               <h1 className='p-2 text-3xl'>{producto?.name}</h1>
               <Image  className="w-[100%] h-[40%]" src={producto?.image} alt={producto?.name} />
