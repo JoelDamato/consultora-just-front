@@ -125,7 +125,7 @@ Iniciar Sesion</Link> }
   <div className="absolute mt-[100vh] z-50 w-[60%] h-[50%] bg-white rounded-lg shadow-lg" onClick={closeModal}>
     <div className='flex flex-row w-[100%] gap-2 justify-center'>
     <h2 className="text-xl font-bold text-center text-black"> Sesion cerrada </h2>
-    <Image src="https://i.ibb.co/rpW0rx0/vecteezy-tick-check-mark-icon-sign-symbol-design-10145966-81.png" width={30} height={30}/>
+    <Image src="https://i.ibb.co/rpW0rx0/vecteezy-tick-check-mark-icon-sign-symbol-design-10145966-81.png"  alt="verificado"  width={30} height={30}/>
     </div>
   </div>: ""}
 
