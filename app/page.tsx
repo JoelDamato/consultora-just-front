@@ -11,14 +11,17 @@ export default function Home() {
 
 
 
-<h1 className='text-center text-2xl font-semibold tracking-[10px] mt-5 mb-5 p-5'>
-      <div className='flex justify-center items-center p-5'>
-<Image className='objet-fit rounded-lg' src="https://i.ibb.co/JBj670q/1-1.jpg" alt="Logo" width={800} height={600} />
+
+      <div className='flex justify-center items-center '>
+<Image className='objet-fit rounded-lg mt-2' src="https://i.ibb.co/JBj670q/1-1.jpg" alt="Logo" width={800} height={600} />
 </div>
+
+<h1 className='text-center text-2xl font-semibold tracking-[10px] mt-5 mb-5 '>
       ¡Bienvenido a Bienestar Elemental!</h1>
     
-    <div className='flex-col items-center sm:flex justify-evenly gap-5 mb-5'>
-<p className='p-5 sm:w-[60vw] text-center text-1xl flex justify-center'>
+
+    <div className='flex-col items-center gap-5 mb-5'>
+<p className='p-5 text-center text-1xl flex justify-center items-center'>
 
 Te ofrecemos una cuidadosa selección de productos naturales que te ayudarán a armonizar cuerpo y mente, y a llenar tu hogar con una energía positiva.
 
@@ -26,10 +29,10 @@ En cada vela y sahumerio, encontrarás la esencia misma de la naturaleza, porque
 </p>
 
 <div className='flex justify-center items-center p-5'>
-<Image className='objet-fit rounded-lg' src="https://i.ibb.co/RBLzxMP/base-so-las-formulas-para-el-agua-caliente-esp.webp
+<Image className='objet-fit rounded-lg' src="https://i.ibb.co/b2ySztJ/base-so-las-formulas-para-el-agua-caliente-esp.jpg
 " alt="Logo" width={800} height={600} />
 </div>
-<p className='p-5 sm:w-[60vw] text-center text-1xl flex justify-center'>
+<p className='p-5 text-center text-1xl flex justify-center items-center'>
 
 
 Nuestro objetivo es brindarte una experiencia única de relajación y bienestar. Ya sea que desees crear un ambiente sereno en tu hogar, meditar para encontrar tu paz interior, o simplemente consentirte con productos que te llenen de energía positiva, estamos aquí para ti.
