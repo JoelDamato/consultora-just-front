@@ -50,7 +50,7 @@ export default function Productos() {
               <Image  className="w-[100%] h-[40%] object-none" src={producto?.image} alt={producto?.name} width={150} height={150} />
               <p className='p-2 '>{producto?.description}</p>
               <p className='p-2 '>{producto?.category}</p>
-              <Link className='border-[1px] border-black rounded-lg p-1 hover:bg-black/20' href={`/productos/${producto?.id}`}>Ver mas..</Link>
+              <Link className='border-[1px] border-black rounded-lg p-1 hover:bg-black/20' href={`${producto?.id}`}>Ver mas..</Link>
             
             </div>
 
