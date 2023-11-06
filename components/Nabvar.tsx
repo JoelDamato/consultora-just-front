@@ -37,10 +37,10 @@ export default function Nabvar() {
     }
   }, []);
   return (
-      <nav className='z-50 p-3 flex gap-2 fixed w-[100vw] justify-star items-center h-[13vh] bg-white sm:bg-gradient-to-r sm:from-white sm:to-[#713f12]/80 text-[#713f12] border-b-1 shadow-lg '>
+      <nav className='z-50 p-3 flex gap-2 fixed w-[100vw] justify-center items-center h-[13vh] bg-white sm:bg-gradient-to-r sm:from-white sm:to-[#713f12]/90 text-[#713f12] border-b-1 shadow-lg '>
 
 
-       <Image src="https://i.ibb.co/ryFWBLr/logobren-removebg-preview.png" className='h-[15vh]  sm:h-[13vh]' alt="Logo" />
+       <Image src="https://i.ibb.co/ryFWBLr/logobren-removebg-preview.png" className=' md:hidden h-[15vh]  sm:h-[13vh]' alt="Logo" width={200} height={400} />
        
      
 

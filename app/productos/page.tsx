@@ -18,7 +18,7 @@ export default function Productos() {
   const [productos, setProductos] = useState<Producto[] | null>(null);
 
   useEffect(() => {
-    axios.get('http://localhost:8000/api/products/')
+    axios.get('https://apibienestar.onrender.com/api/products/')
       .then(res => setProductos(res.data)) // Cambiar aquí
       .catch(err => console.log(err));
   }, []);
@@ -39,7 +39,7 @@ export default function Productos() {
       {productos === null ? (
         <div>Cargando...</div>
       ) : (
-        <div className='flex  sm:flex-wrap w-[100%] gap-3'>
+        <div className='flex flex-wrap w-[100%] h-[10%] gap-3'>
         
 
           {productos?.map((producto,index) => (
@@ -47,7 +47,7 @@ export default function Productos() {
             <div key={index} className='border-[1px] border-black bg-white sm:w-[30%]  flex flex-col items-center'>
             
               <h1 className='p-2 text-3xl'>{producto?.name}</h1>
-              <Image  className="w-[100%] h-[40%]" src={producto?.image} alt={producto?.name} />
+              <Image  className="w-[100%] h-[40%] object-none" src={producto?.image} alt={producto?.name} width={150} height={150} />
               <p className='p-2 '>{producto?.description}</p>
               <p className='p-2 '>{producto?.category}</p>
               <Link className='border-[1px] border-black rounded-lg p-1 hover:bg-black/20' href={`/productos/${producto?.id}`}>Ver mas..</Link>

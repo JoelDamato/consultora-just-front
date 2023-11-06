@@ -9,14 +9,9 @@ export default function Footer() {
   return (
     <div className='mt-5 w-[100vw] min-h-[30vh] '>
       
-      <div className='p-3 flex justify-center gap-3 shadow-lg bg-white/20 border-[1px] w-[100vw]'>
-
-<a target="_blank" href="https://www.instagram.com/brendacarolaalbornoz/">
-<Image className='w-[8vw] h-[5vh] sm:w-[3vw] object-fill'  src="https://cdn.icon-icons.com/icons2/2972/PNG/512/instagram_logo_icon_186894.png" alt="" />
-</a>
-<a target="_blank" href="https://wa.me/+5491167501767">
-<Image className='w-[8vw] h-[5vh] sm:w-[3vw] object-fill'  src="https://cdn.icon-icons.com/icons2/2972/PNG/512/whatsapp_logo_icon_186881.png" alt="" />
-</a>
+      <div className='p-3 flex justify-center shadow-lg bg-white/20 border-[1px] w-[100vw]'>
+      <a href="https://wa.me/+5491167501767" target="_blank">
+      <Image src="https://i.ibb.co/M1scBcF/627baa008d659819b11084f7.png"  alt="Logo" width={100} height={100} /></a>
 </div>
 
 

@@ -24,7 +24,7 @@ const Page: React.FC<PageProps> = ({ params }) => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8000/api/products/${params.id}`)
+      .get(`https://apibienestar.onrender.com/api/products/${params.id}`)
       .then((res) => setProducto(res.data))
       .catch((err) => console.log(err));
   }, [params.id]);
@@ -43,7 +43,7 @@ const Page: React.FC<PageProps> = ({ params }) => {
         
           <h3 className='text-3xl m-2'>{producto.name}</h3>
           <p> Categoria: {producto.category}</p>
-          <Image className='rounded-full m-2' src={producto.image} alt={producto.name} />
+          <Image className='rounded-full m-2 object-contain ' src={producto.image} alt={producto.name} width={550} height={550} />
           <p className='m-2'>{producto.description}</p>
           
           
