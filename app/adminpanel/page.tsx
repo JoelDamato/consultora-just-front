@@ -20,6 +20,7 @@ const AdminPanel = () => {
     image: '',
   });
 
+
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = event.target;
     setFormData((prevFormData) => ({
@@ -65,10 +66,10 @@ const AdminPanel = () => {
 
   return (
     <div className='flex flex-col items-center gap-5 ' >
-         <div className='flex justify-evenly bg-black/20 rounded-lg  w-[50vw] p-5'>
-        <button className='rounded-lg bg-white/70 p-4 hover:bg-amber-700/20' onClick={()=>admins("crear")}> CREAR </button>
-        <button className='rounded-lg bg-white/70 p-4 hover:bg-amber-700/20' onClick={()=>admins("editar")}> EDITAR </button>
-        <button className='rounded-lg bg-white/70 p-4 hover:bg-amber-700/20' onClick={()=>admins("borrar")}> ELIMINAR </button>
+         <div className='flex justify-center  rounded-lg  w-[50vw] p-5'>
+        <button className='rounded-lg shadow-lg bg-white/70 p-4 hover:bg-amber-700/20' onClick={()=>admins("crear")}> CREAR </button>
+        <button className='rounded-lg shadow-lg bg-white/70 p-4 hover:bg-amber-700/20' onClick={()=>admins("editar")}> EDITAR </button>
+        <button className='rounded-lg shadow-lg bg-white/70 p-4 hover:bg-amber-700/20' onClick={()=>admins("borrar")}> ELIMINAR </button>
         </div>
         {admin === "crear"? 
         <>
