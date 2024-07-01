@@ -15,11 +15,6 @@ export default function Home() {
       <div className='flex justify-center items-center '>
 <Image className='objet-fit rounded-lg mt-2' src="https://i.ibb.co/JBj670q/1-1.jpg" alt="Logo" width={800} height={600} />
 </div>
-
-<h1 className='text-center text-2xl font-semibold tracking-[10px] mt-5 mb-5 '>
-      ¡Bienvenido a Bienestar Elemental!</h1>
-    
-
     <div className='flex-col items-center gap-5 mb-5'>
 <p className='p-5 text-center text-1xl flex justify-center items-center'>
 
@@ -44,23 +39,6 @@ Explora nuestra variedad de velas, creadas para iluminar tu camino en los moment
 
     </div>
  
- <div className='pb-5 bg-gray-200 flex flex-col items-center rounded-lg'>
-<iframe
-
-        src="https://www.veed.io/embed/00ba9eb1-cbbe-4d4e-b4d1-3f90d2c1f1ef"
-        className='w-[80vw] h-[60vh] sm:w-[40vw] sm:h-[60vh] rounded-lg'
-        title="Video de Humificador"
-        allowFullScreen
-      ></iframe>
-
-   <p className='pt-2 mt-5 sm:w-[60vw] text-1xl text-center flex justify-center'>
-      
-      En este viaje hacia el equilibrio, te acompañaremos con consejos útiles y sugerencias para maximizar tu bienestar en cada paso.
-    
-    Así que, sumérgete en el aroma de la naturaleza y encuentra la calma que tanto anhelas. Te invitamos a descubrir la magia de nuestros productos naturales, y a vivir una experiencia única en nuestro rincón de serenidad y armonía.
-    
-    </p>
-    </div>
     </>
   )
 }

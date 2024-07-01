@@ -68,7 +68,6 @@ const AdminPanel = () => {
     <div className='flex flex-col items-center gap-5 ' >
          <div className='flex justify-center  rounded-lg  w-[50vw] p-5'>
         <button className='rounded-lg shadow-lg bg-white/70 p-4 hover:bg-amber-700/20' onClick={()=>admins("crear")}> CREAR </button>
-        <button className='rounded-lg shadow-lg bg-white/70 p-4 hover:bg-amber-700/20' onClick={()=>admins("editar")}> EDITAR </button>
         <button className='rounded-lg shadow-lg bg-white/70 p-4 hover:bg-amber-700/20' onClick={()=>admins("borrar")}> ELIMINAR </button>
         </div>
         {admin === "crear"? 
